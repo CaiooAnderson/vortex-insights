@@ -3,7 +3,7 @@ import { registerApplication, start, LifeCycles } from "single-spa";
 registerApplication({
   name: "@single-spa/welcome",
   app: () =>
-    import<LifeCycles>(
+    System.import<LifeCycles>(
       /* webpackIgnore: true */
       "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js"
     ),
